@@ -53,10 +53,10 @@ mkdir -p /var/home/$USER/.local/share/wallpapers
 mkdir -p /var/home/$USER/.local/share/base16
 mkdir -p /var/home/$USER/.local/share/fonts
 
-#flatpak override --filesystem=/var/home/$USER/.icons
-#flatpak override --filesystem=/var/home/$USER/.themes
-#flatpak override com.google.Chrome --filesystem=$HOME/.themes
-#flatpak override --env=GTK_THEME=Base16
+flatpak override --filesystem=/var/home/$USER/.icons
+flatpak override --filesystem=/var/home/$USER/.themes
+flatpak override com.google.Chrome --filesystem=$HOME/.themes
+flatpak override --env=GTK_THEME=Base16
 
 echo "Reboot your system with: systemctl reboot"
 exit 0;
