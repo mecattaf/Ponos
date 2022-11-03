@@ -45,7 +45,7 @@ fi
 echo "Installing layered packages..."
 cat layered-packages.list | rpm-ostree --idempotent install `xargs`
 
-flatpak uninstall --system --delete-data org.gnome.Calculator org.gnome.Calendar org.gnome.Connections org.gnome.Contacts org.gnome.Logs org.gnome.Maps org.gnome.Weather org.gnome.baobab
+flatpak uninstall --system org.gnome.Calculator org.gnome.Calendar org.gnome.Connections org.gnome.Contacts org.gnome.Logs org.gnome.Maps org.gnome.Weather org.gnome.baobab
 
 mkdir -p /var/home/$USER/.icons
 mkdir -p /var/home/$USER/.themes
