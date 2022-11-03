@@ -45,6 +45,7 @@ curl -o base16.tar.gz -L "$base16"
 tar -xf base16.tar.gz -C /var/home/$USER/.local/share/base16
 mv /var/home/$USER/.local/share/base16/base16-flavours/* /var/home/$USER/.local/share/base16/
 rm -rf /var/home/$USER/.local/share/base16/base16-flavours/ 
+rm base16.tar.gz
 
 curl -o Base16.tar.gz -L "$gtk"
 tar -xf Base16.tar.gz -C /var/home/$USER/.themes/
